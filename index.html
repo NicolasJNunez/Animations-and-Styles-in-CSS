@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="./img/logo.ico">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Estilos y Animaciones con CSS</title>
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <img src="./img/logo.png" alt="logo animaciones">
+    </div>
+    <h1>Estilos y Animaciones con CSS</h1>
+  </header>
+
+  <main>
+
+    <section>
+
+      <h2>Introducción</h2>
+      <article>
+        <h3>Propiedad Background</h3>
+        <p>Principalmente, esta herramienta nos sirve como atajo para resumir a todas las propiedades de fondo. Por
+          ejemplo cuando estamos trabajando con imagenes de fondo, directamente en la propiedad background podriamos
+          poner "background image" o directamente poner la dirección a la imagen, o si queremos el valor de repeat o no
+          repeat, cover o contain y o tamaño. Un atajo que resume varias propiedades en una, algo así como la propiedad
+          border ⇨ border: 2px solid ◼black.</p>
+
+        <p>En este caso, usaremos la propiedad background para aplicar la herramienta "linear-gradient".</p>
+
+        <div class="cont-img">
+          <img class="img" src="./img/linear-gradient.png" alt="liner gradient">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="contbox">
+          <div class="box"></div>
+        </div>
+
+        <hr class="line">
+
+        <div class="cont-img">
+          <img class="img" src="./img/linear-gradient-multiple.png" alt="liner gradient multiple">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="contbox">
+          <div class="box--multiple"></div>
+        </div>
+
+        <hr class="line">
+
+        <div class="cont-img">
+          <img class="img" src="./img/linear-gradient-to-right.png" alt="liner gradient direction">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="contbox--multiples">
+          <div class="box--to-right"></div>
+          <div class="box--to-bottom"></div>
+          <div class="box--to-top"></div>
+          <div class="box--to-left"></div>
+          <div class="box--to-top-right"></div>
+        </div>
+
+        <hr class="line">
+
+        <div class="cont-img">
+          <img class="img" src="./img/linear-gradient-degree.png" alt="liner-gradient-degree">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="cont-img">
+          <img class="img--mediana" src="./img/linear-gradient-degrees.png" alt="liner gradient degrees">
+        </div>
+
+        <hr class="line">
+
+        <div class="cont-img">
+          <img class="img" src="./img/linear-gradient-porcentaje.png" alt="liner-gradient-porcentaje">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="cont-img">
+          <img class="img--mediana" src="./img/linear-gradient-porcentaje-img.png" alt="liner gradient porcentaje img">
+        </div>
+
+        <hr class="line">
+
+        <div class="cont-img">
+          <img class="img--narrow" src="./img/linear-gradient-porcentaje-multiples.png"
+            alt="liner gradient porcentaje multiple">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <p class="texto-centrado--negrita--espaciado">Si nosotros no le damos un espacio a los gradientes entre los
+          porcentajes para que tengan un difuminado, se generará este efecto ⇩</p>
+
+        <div class="contbox">
+          <div class="box--percentages"></div>
+        </div>
+
+        <hr class="line">
+
+        <div class="cont-img">
+          <img class="img" src="./img/repeating-linear-gradient.png" alt="repeating liner gradient">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="contbox">
+          <div class="box--repeating-linear-gradient"></div>
+        </div>
+
+        <div class="cont-img">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="contbox">
+          <div class="box--repeating-linear-gradient-black-and-white"></div>
+        </div>
+
+        <p class="texto-centrado--negrita">Es recomendable trabajar con las estructuras planteadas arriba ⇧ ya que un
+          elemento creado por css pesa menos que una imagen y eso optimiza la página</p>
+
+        <hr class="line">
+
+        <div class="cont-img">
+          <img class="img" src="./img/radial-gradient.png" alt="radial gradient">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="cont-img">
+          <img class="img--mediana" src="./img/img-radial-gradient.png" alt="radial gradient">
+        </div>
+
+        <p class="texto-centrado--negrita">⇧ En esta imagen se ve como el color rojo comienza desde adentro y se va
+          extendiendo hacia afuera. Esto puede ser modificado con porcentajes o px.</p>
+
+        <div class="cont-img">
+          <img class="img" src="./img/radial-gradient-px.png" alt="radial gradient px">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="contbox">
+          <div class="box--radial"></div>
+        </div>
+
+        <div class="cont-img">
+          <img class="img" src="./img/radial-gradient-percent.png" alt="radial gradient percent">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="contbox">
+          <div class="box--radial--percent"></div>
+        </div>
+
+        <div class="cont-img">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="contbox">
+          <div class="box--radial--percent--repeating"></div>
+        </div>
+
+        <p class="texto-centrado--negrita">⇧ Esta imagen tiene la propiedad "repeating radial gradient"</p>
+
+        <div class="cont-img">
+          <img class="img" src="./img/circle-radial.png" alt="radial circle">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="cont-img">
+          <img class="img--mediana" src="./img/img-circle-radial.png" alt="radial circle">
+        </div>
+
+        <p class="texto-centrado--negrita">⇧ Si la propiedad radial gradient tiene aclarado el parametro "circle", el
+          difuminado circular respetará su forma y no se deformará.</p>
+
+        <div class="cont-img">
+          <img class="img" src="./img/circle-medido.png" alt="radial circle medido">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="contbox">
+          <div class="box--circle-medido"></div>
+        </div>
+
+        <div class="cont-img">
+          <img class="img" src="./img/coordenada-radial.png" alt="radial circle coordenada">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="cont-img">
+          <img class="img--mediana" src="./img/radial-gradient-coordenadas.png" alt="radial circle coordenadas">
+        </div>
+
+        <div class="cont-img">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="contbox">
+          <div class="box--coordenada"></div>
+        </div>
+
+        <p class="texto-centrado--negrita--espaciado--abajo">⇧ Las coordenadas de este ejemplo fueron "circle at 50%
+          70%". También hay que tener en cuenta que se pueden poner valores negativos. Ej: -40%</p>
+
+        <div class="cont-img">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <figure class="cont-img">
+          <video class="img--grande" controls src="./videos/gradientes-web.mp4"></video>
+        </figure>
+
+      </article>
+
+    </section>
+
+    <hr class="line">
+
+    <section>
+
+      <div class="cont-img">
+        <h2 class="h2--underlinedt">Shadows</h2>
+      </div>
+
+      <article>
+
+        <div class="cont-img">
+          <h3 class="h3--grande">Variedades:</h3>
+        </div>
+
+        <div class="cont-img">
+          <img class="img--grande" src="./img/text-shadow.png" alt="text shadows">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="contbox">
+          <div class="box--text-shadow"><span class="span__text">T E X T O</span></div>
+        </div>
+
+        <p class="texto-centrado--negrita">⇧ Se pueden usar valores negativos para posicionar las sombras de texto como
+          las de cajas. Con respecto al sombreado de cajas, el 4to valor corresponde al "factor de crecimiento".</p>
+
+        <p class="texto-centrado--negrita">También tener en cuenta que el valor "inset" o "outset" determina si la
+          sombra es interna o externa.</p>
+
+        <div class="cont-img">
+          <img class="img--flecha--espacio" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <figure class="cont-img">
+          <video class="img--grande" controls src="./videos/shadows.mp4"></video>
+        </figure>
+
+        <div class="cont-img">
+          <img class="img--flecha--espacio" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <figure class="cont-img">
+          <video class="img--grande" controls src="./videos/text-effects.mp4"></video>
+        </figure>
+
+      </article>
+
+    </section>
+
+    <hr class="line">
+
+
+    <section>
+      
+      <div class="cont-img">
+        <h2 class="h2--underlinedt">Transformaciones</h2>
+      </div>
+      
+      <article>
+        
+        <div class="cont-img">
+          <h3 class="h3--grande--espaciado">¿Qué son las transformaciones?</h3>
+        </div>
+        
+        <p>Las transformaciones son aquellas que modifican como el elemento se ve pero no modifica el comportamiento del elemento ni tampoco modifica el lugar que ocupa. Si modificamos un elemento que al lado tiene por ejemplo, una tarjeta, esa tarjeta no va a sufrir ningun topo de modificación y el elemento que nosotros estamos transformando lo va a "empujar"</p>
+        
+        
+        
+        <div class="cont-img">
+          <h3 class="h3--grande--espaciado--arribatmb">Translación</h3>
+        </div>
+        
+        <p class="texto-centrado">Muy parecido a la propiedad "position". Entre estas dos, la propiedad translate funciona mejor ya que el ajuste de la posición parte desde el centro del elemento.</p>
+        
+        <div class="cont-img">
+          <img class="img--espacio-arriba" src="/img/translate-cod.png" alt="translación">
+          <img class="img" src="./img/translate-y.png" alt="translacion-y">
+          <img class="img--espacio-abajo" src="./img/translate-x-y.png" alt="translate-x-y">
+          <img class="img--espacio-abajo" src="./img/translate-res.png" alt="translate-resumido">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img--mediana" src="./img/translate.png" alt="translate">
+        </div>
+        
+        <div class="cont-img">
+          <h3 class="h3--grande--espaciado--arribatmb">Rotación</h3>
+        </div>
+        
+        <div class="cont-img">
+          <img class="img--espacio-arriba" src="./img/rotate.png" alt="rotate">
+          <img class="img--espacio-abajo" src="./img/simpl-rot.png" alt="simplificacion-rotate">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+        
+        <div class="contbox">
+          <div class="box--rotate"></div>
+        </div>
+        
+        <div class="cont-img">
+          <img class="img--espacio-arriba" src="./img/rotate-x.png" alt="rotate-x">
+          <img class="img--espacio-abajo" src="./img/simpl-rot-x.png" alt="simplificacion eje x">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+        
+        <div class="contbox">
+          <div class="box--rotatex"></div>
+        </div>
+        
+        <p class="texto-centrado">Parece que la imagen se esta achicando pero en realidad se esta "acostando" ⇧</p>
+        
+        <div class="cont-img">
+          <img class="img--espacio-arriba" src="./img/rotate-y.png" alt="rotate-x">
+          <img class="img--espacio-abajo" src="./img/simpl-rot-y.png" alt="simplificacion rotate y">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+
+        <div class="contbox">
+          <div class="box--rotatey"></div>
+        </div>
+        
+        <p class="texto-centrado">Aquí esta pasando lo mismo que el ejemplo anterior pero en el eje Y ⇧</p>
+        
+        <hr class="line">
+        
+        <div class="cont-img">
+          <h3 class="h3--grande--espaciado--arribatmb">Escalado</h3>
+        </div>
+        
+        <div class="grilla-scale">
+          <div class="cont-scale">
+            <img src="./img/scale-05.png" alt="scale 0.5">
+          </div>
+          <div class="cont-scale">
+            <img src="./img/scale-1.png" alt="scale 1">
+          </div>
+          <div class="cont-scale">
+            <img src="./img/scale-2.png" alt="scale 2">
+          </div>
+          <div class="cont-flecha">
+            <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+          </div>
+          <div class="cont-flecha">
+            <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+          </div>
+          <div class="cont-flecha">
+            <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+          </div>
+          <div class="cont-img-scale">
+            <img class="img--mediana" src="./img/scale-05-img.png" alt="scale 0.5 img">
+          </div>
+          <div class="cont-img-scale">
+            <img class="img--mediana" src="./img/scale-1-img.png" alt="scale 1 img">
+          </div>
+          <div class="cont-img-scale">
+            <img class="img--mediana" src="./img/scale-2-img.png" alt="scale 2 img">
+          </div>
+        </div>
+        
+        <div class="cont-img">
+          <img class="img" src="./img/scale-multiple.png" alt="scale multiple">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img--mediana" src="./img/scale-multiple-img.png" alt="scale multiple img">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img" src="./img/scale-onlyx.png" alt="scale only x">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img--mediana" src="./img/scale-onlyx-img.png" alt="only x">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img" src="./img/scale-onlyy.png" alt="scale only y">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img--flecha--espacio" src="/img/scale-onlyy-img.png" alt="only y img">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img" src="./img/scale-simple.png" alt="scale only simpl">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img--mediana" src="/img/scale-simple-img.png" alt="simple img scale">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img" src="./img/scale-voltear.png" alt="scale voltear">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img--mediana" src="./img/scale-voltear-img.png" alt="scale voltear">
+        </div>
+        
+        
+      </article>
+      
+    </section>
+    
+    <hr class="line">
+    
+    <section>
+      
+      <div class="cont-img">
+        <h2 class="h2--underlinedt">Transiciones</h2>
+      </div>
+      
+      <article>
+      
+        <div class="cont-img">
+          <h3 class="h3--grande--espaciado">¿Cómo se conforman las transiciones?</h3>
+        </div>
+        
+        <p class="texto-centrado">Las transiciones se conforman de cuatro propiedades: Transition property, transition duration, transition delay y transition timing function. Tener en cuenta que la propiedad de "transition property" es "all" por defecto. A nivel rendimiento del navegador, no es ideal aplicar un transition property: all, sino que lo ideal es marcar solamente aquellas transformaciones que querramos. Esto es para liberar un poco los procesos de la pagina a la hora de cargarla en un navegador y que se centre en otros mas importantes. Por eso es mejor tambien hacer animaciones con css en vez de cargar un video a la pagina por ejemplo.</p>
+        
+        <div class="cont-img">
+          <img class="img" src="./img/transition-duration.png" alt="transition duration">
+          <p>Para ver la transición, hacerle "hover" a la caja. (Tiene delay)</p>
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+      
+        <div class="contbox">
+          <div class="boxtransition"></div>
+        </div>
+        
+        <hr class="line">
+        
+        <div class="cont-img">
+          <h3 class="h3--grande--espaciado--arribatmb">Transition Timing Function</h3>
+        </div>
+        
+        <p class="texto-centrado">Con la propiedad transition-timing-function nosotros podemos declarar la velocidad de la progresión en el tiempo. La propiedad que viene por defecto es la de "ease", pero tambien tenemos las propiedades "ease-in", "ease-out", "ease-in-out" y por ultimo la propiedad "linear"</p>
+        
+        <div class="cont-img">
+          <img class="img--mediana" src="./img/transition-timing.png" alt="transition timing function">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+        
+        <figure class="cont-img">
+          <video class="img--grande" controls src="./videos/cubic-bezier.mp4"></video>
+        </figure>
+        
+        <div class="cont-img">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+          <p class="texto-centrado--negrita--espaciado">Tambien podemos ejecutar la version simplificada de las transiciones como observamos aquí abajo. La primer propiedad es la duración, la segunda el delay, la tercera son los elementos afectados y por ultimo el timing function ⇩</p>
+          <img class="img" src="./img/transition-simpl.png" alt="transition simplificado">
+        </div>
+        
+        <hr class="line">
+        
+        <p class="texto-centrado--negrita">Para que estas transiciones funciones, necesitamos de un disparador, especificamente de una "pseudo-clase" como la es "hover". Pero si queremos tener más control sobre donde ocurren o cuando ocurren, nos adentraremos mas en lo que son las...</p>
+        
+      </article>
+      
+    </section>
+    
+    <section>
+      
+      <div class="cont-img">
+        <h2 class="h2--underlinedt">Animaciones</h2>
+      </div>
+      
+      <article>
+        
+        <div class="cont-img">
+          <h3 class="h3--grande--espaciado">¿Como estan compuestas las animaciones?</h3>
+        </div>
+        
+        <p class="texto-centrado">Las animaciones estan compuestas por las propiedades "animation-name", "animation-duration", "animation-iteration-count" "animation-direction", "animation-delay", "animation-timing-function" y "animation-fill-mode". Las animaciones no las construimos sobre el elemento, sino que las construimos por afuera del elemento. El espacio original que la caja ocupa se mantiene. La caja se mueve en el espacio y no choca con otros elementos.Para que todo esto sea posible, aqui entra en juego la regla de css llamada @keyframes (la cual va por fuera de los estilos de la caja a quien queremos animar)</p>
+        
+        <div class="cont-img">
+          <img class="img" src="./img/keyframes.png" alt="keyframes">
+        </div>
+        
+        <div class="contbox-animacion">
+          <div class="boxanimacion"></div>
+        </div>
+        
+        <div class="contbox-animacion">
+          <div class="boxanimacion2"></div>
+        </div>
+        
+        <p class="texto-centrado--negrita--espaciado--groso">La propiedad "animation direction" tiene el valor "reverse" lo que hace que la animacion se de en reversa. Despues tenemos el valor de "alternate" lo cual va alternando entre el valor normal y el de reversa. Por ultimo , alternate reverse es lo mismo que el valor anterior pero empieza en reversa.</p>
+        
+        <div class="cont-img">
+          <img class="img--flecha--reversa" src="./img/flecha.png" alt="flecha">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img" src="./img/animation-direction.png" alt="animation direction">
+        </div>
+        
+        <div class="cont-img">
+          <img class="img" src="./img/fill-mode.png" alt="fill mode">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+        
+        <p class="texto-centrado--negrita--espaciado">Luego tenemos la propiedad "animation-fill-mode". Esta propiedad es bastante peculiar debido a sus valores. El valor "forwards" mantiene la ultima instancia de su animacion fija ⇩. Con el valor Both respeta los estados del comienzo y del final si hay un delay aplicado.</p>
+        
+        <div class="contbox-animacion2">
+          <div class="boxanimacion3"></div>
+        </div>
+        
+        <hr class="line">
+        
+      </article>
+      
+    </section>
+    
+    <section>
+    
+      <div class="cont-img">
+        <h2 class="h2--underlinedt">Librerias</h2>
+      </div>
+    
+    <article>
+      
+      <div class="cont-img">
+        <h3 class="h3--grande--espaciado--sinsubr">¿Qué bibliotecas tenemos disponibles y como agregarlas al proyecto?</h3>
+      </div>
+      
+      <div class="cont-img">
+        <img class="img--mediana" src="./img/animate.png" alt="animate css">
+      </div>
+      
+      <div class="cont-img">
+        <img class="img--grande" src="./img/how-to-animate-css.png" alt="how to animate css">
+      </div>
+      
+      <div class="contbox">
+        <div class="boxanimacion2 animate__animated animate__flip"></div>
+      </div>
+      
+      <div class="cont-img">
+        <img class="img--mediana" src="./img/animate-css-cod.png" alt="animate css">
+      </div>
+      
+      <hr class="line">
+      
+      <div class="cont-img">
+        <img class="img--mediana" src="./img/animista.png" alt="animista">
+      </div>
+      
+      <div class="cont-img">
+        <img class="img--grande" src="./img/animista-ex.png" alt="animista ex">
+      </div>
+      
+      <div class="contbox">
+        <div class="box swing-top-fwd"></div>
+      </div>
+      
+      <hr class="line">
+      
+      <div class="cont-img">
+        <h3 class="h3--grande--espaciado">AOS</h3>
+      </div>
+      
+      <p class="texto-centrado">La librería AOS (Animate On Scroll) es una librería JavaScript que se utiliza para crear efectos de animación en elementos HTML al hacer scroll en una página web.
+
+        La idea detrás de AOS es que los elementos en una página web se animen a medida que el usuario los vea al hacer scroll en la página, lo que puede mejorar la experiencia de usuario y hacer que la página web sea más atractiva visualmente.
+        
+        Para utilizar AOS, es necesario agregar la librería JavaScript y los archivos CSS correspondientes en el documento HTML de la página web. Luego, se pueden agregar los atributos "data-aos" y "data-aos-*" a los elementos HTML que se desean animar, especificando el tipo de animación y las opciones de configuración para la animación.</p>
+      
+      <div class="cont-flecha">
+        <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+      </div>
+
+      <figure class="cont-img">
+        <video class="img--grande" controls src="./videos/aos.mp4"></video>
+      </figure>
+
+      <div class="cont-img">
+        <img data-aos="fade-right" class="img--grande" src="./img/vizla.jpg" alt="vizla">
+      </div>
+      
+      <hr class="line">
+
+      <div class="cont-img">
+        <h3 class="h3--grande--espaciado">Codepen</h3>
+      </div>
+
+      <p class="texto-centrado">CodePen es una plataforma en línea que permite a los desarrolladores y diseñadores web crear, compartir y descubrir proyectos en vivo de HTML, CSS y JavaScript. Es una herramienta útil para crear y experimentar con código, así como para mostrar y compartir proyectos con otros desarrolladores y diseñadores.
+
+        Los usuarios pueden crear proyectos desde cero o importar proyectos existentes para editarlos en línea. La plataforma ofrece un editor de código en vivo que muestra los cambios en tiempo real a medida que se realizan, lo que facilita la experimentación con diferentes diseños, estilos y funcionalidades.</p>
+        
+        <div class="cont-flecha">
+          <img class="img--flecha" src="./img/flecha.png" alt="flecha">
+        </div>
+      
+      <figure class="cont-img">
+        <video class="img--grande" controls src="./videos/codepen.mp4"></video>
+      </figure>
+
+      
+
+    </article>
+    
+    </section>
+
+  </main>
+  
+  <footer>
+
+
+
+  </footer>
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

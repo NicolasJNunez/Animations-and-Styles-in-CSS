@@ -1,0 +1,156 @@
+.contbox {
+  @include flex-center;
+  &--multiples {
+    @extend .contbox;
+    justify-content: space-around;
+  }
+}
+
+.box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  background: linear-gradient(red,yellow);
+  &--multiple {
+    @extend .box;
+    background: linear-gradient(red, orange, yellow, blue, green);
+  }
+  &--to-right {
+    @extend .box;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right,red, yellow);
+  }
+  &--to-bottom {
+    @extend .box, .box--to-right;
+    background: linear-gradient(to bottom,red,yellow);
+  }
+  &--to-top {
+    @extend .box, .box--to-right;
+    background: linear-gradient(to top,red,yellow);
+  }
+  &--to-left {
+    @extend .box, .box--to-right;
+    background: linear-gradient(to left, red,yellow);
+  }
+  &--to-top-right {
+    @extend .box, .box--to-right;
+    background: linear-gradient(to top right,red,yellow);
+  }
+  &--repeating-linear-gradient {
+    @extend .box;
+    background: repeating-linear-gradient(red 0% 20%, yellow 30% 40%);
+  }
+  &--repeating-linear-gradient-black-and-white {
+    @extend .box;
+    background: repeating-linear-gradient(black 0% 5%, white 5% 10%);
+  }
+  &--percentages {
+    @extend .box;
+    background: linear-gradient(to right, red 0% 50%, yellow 50% 80%, green 80% 100%);
+  }
+  &--radial {
+    @extend .box;
+    background: radial-gradient(red 100px, yellow);
+    &--percent {
+      @extend .box;
+      background: radial-gradient(red 10%, yellow 10%);
+      &--repeating {
+        @extend .box;
+        background: repeating-radial-gradient(red 0% 10%, yellow 10% 20%);
+      }
+    }
+  }
+  &--circle-medido {
+    @extend .box;
+    background: radial-gradient(circle 60px, red, yellow);
+  }
+  &--coordenada {
+    @extend .box;
+    background: radial-gradient(circle at 50% 70%, red,yellow);
+  }
+  &--text-shadow {
+    @extend .box;
+    @include flex-center;
+    background: radial-gradient(white,black);
+    box-shadow: 20px 20px 10px 5px rgb(56, 4, 14);
+  }
+  &--rotate {
+    @extend .box;
+    margin-top: 125px;
+    transform: rotate(30deg);
+  }
+  &--rotatex {
+    @extend .box;
+    transform: rotateX(50deg);
+  }
+  &--rotatey {
+    @extend .box;
+    transform: rotateY(40deg);
+  }
+}
+
+.boxtransition {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  background: linear-gradient(red,yellow);
+  transition-property: width transform;
+  transition-duration: 2s;
+  transition-delay: 1s;
+  &:hover {
+    transform:rotate(360deg);
+    width: 500px;
+    margin-bottom: 150px;
+  }
+}
+
+.boxanimacion {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  background: linear-gradient(red,yellow);
+  animation-name: mover-caja;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.contbox-animacion {
+  padding: 250px;
+  height: 800px;
+  display: flex;
+}
+
+.boxanimacion2 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  background: linear-gradient(red,yellow);
+  animation-name: mover-caja2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+.contbox-animacion2 {
+  height: 800px;
+  display: flex;
+  margin: 150px 0 0 150px;
+}
+
+
+.boxanimacion3 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  animation-name: mover-caja3;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+}

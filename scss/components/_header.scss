@@ -1,0 +1,9 @@
+header {
+  @include flex-center;
+  flex-direction: column;
+}
+
+header h1 {
+  font-weight: 900;
+  text-decoration: underline;
+}
