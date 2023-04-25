@@ -154,7 +154,7 @@ header h1 {
   flex-direction: column;
 }
 
-.img, .img--grande, .img--narrow, .img--mediana, .img--espacio-abajo, .img--espacio-arriba {
+.img, .img--grande, .img--narrow, .img--pequena, .img--mediana, .img--espacio-abajo, .img--espacio-arriba {
   margin: 50px 0 50px 0;
   box-shadow: 2px 2px 10px 0 black;
 }
@@ -166,6 +166,9 @@ header h1 {
 }
 .img--mediana {
   width: 600px;
+}
+.img--pequena {
+  width: 450px;
 }
 .img--flecha, .img--flecha--espacio, .img--flecha--reversa, .img--flecha--grid {
   width: 150px;

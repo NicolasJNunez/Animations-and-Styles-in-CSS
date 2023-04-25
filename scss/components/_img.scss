@@ -18,6 +18,10 @@
     @extend .img;
     width: 600px;
   }
+  &--pequena {
+    @extend .img;
+    width: 450px
+  }
   &--flecha {
     width: 150px;
     &--grid {
