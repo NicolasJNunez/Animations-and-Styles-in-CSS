@@ -169,3 +169,57 @@ $sec-color: rgb(105,189,177);
     transform-origin: bottom;
 }
 }
+
+@mixin w1685 {
+  @media (max-width:1685px) {
+    @content;
+  }
+}
+
+@mixin w1523 {
+  @media (max-width:1523px) {
+    @content;
+  }
+}
+
+@mixin w1431 {
+  @media (max-width:1431px) {
+    @content;
+  }
+}
+
+@mixin w1041 {
+  @media (max-width:1041px) {
+    @content;
+  }
+}
+
+@mixin w957 {
+  @media (max-width:957px) {
+    @content;
+  }
+}
+
+@mixin w747 {
+  @media (max-width:747px) {
+    @content;
+  }
+}
+
+@mixin w639 {
+  @media (max-width:639px) {
+    @content;
+  }
+}
+
+@mixin w579 {
+  @media (max-width:579px) {
+    @content;
+  }
+}
+
+@mixin w525 {
+  @media (max-width:525px) {
+    @content;
+  }
+}

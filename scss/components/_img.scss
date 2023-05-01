@@ -6,6 +6,12 @@
 .img {
   margin: 50px 0 50px 0;
   box-shadow: 2px 2px 10px 0 black;
+  @include w1431 () {
+    width: 500px;
+  }
+  @include w525 () {
+    width: 300px;
+  }
   &--espacio-arriba {
     @extend .img;
     margin: 50px 0 0 0;
@@ -13,17 +19,51 @@
   &--espacio-abajo {
     @extend .img;
     margin: 0 0 50px 0;
+    @include w1523 () {
+      width: 300px;
+    }
   }
   &--mediana {
     @extend .img;
     width: 600px;
+    @include w639 () {
+      width: 300px;
+    }
   }
   &--pequena {
     @extend .img;
     width: 450px
   }
+  &--linear {
+    @extend .img;
+    @include w1685 () {
+      width: 700px;
+    }
+    @include w639 () {
+      width: 400px;
+    }
+  }
+  &--pequena-ejemplo {
+    @extend .img;
+    width: 450px;
+    @include w1523 () {
+      width: 400px;
+    }
+    @include w1431 () {
+      width: 300px;
+    }
+    @include w1041 () {
+      width: 200px;
+    }
+    @include w747 () {
+      width: 100px;
+    }
+  }
   &--flecha {
     width: 150px;
+    @include w747 () {
+      width: 100px;
+    }
     &--grid {
       @extend .img--flecha;
       }
@@ -40,9 +80,21 @@
     @extend .img;
     width: 1400px;
     height: fit-content;
+    @include w1431 () {
+      width: 550px;
+    }
+    @include w525 () {
+      width: 300px;
+    }
   }
   &--grande {
     @extend .img;
     width: 900px;
+    @include w957 () {
+      width: 550px;
+    }
+    @include w579 () {
+      width: 300px;
+    }
   }
 }
