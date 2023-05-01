@@ -371,11 +371,22 @@ header h1 {
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+@media (max-width: 957px) {
+  .boxanimacion {
+    width: 50px;
+    height: 50px;
+  }
+}
 
 .contbox-animacion {
   padding: 250px;
   height: 800px;
   display: flex;
+}
+@media (max-width: 957px) {
+  .contbox-animacion {
+    padding: 0;
+  }
 }
 
 .boxanimacion2 {
@@ -388,11 +399,23 @@ header h1 {
   animation-iteration-count: infinite;
   animation-direction: reverse;
 }
+@media (max-width: 957px) {
+  .boxanimacion2 {
+    width: 50px;
+    height: 50px;
+  }
+}
 
 .contbox-animacion2 {
   height: 800px;
   display: flex;
   margin: 150px 0 0 150px;
+}
+@media (max-width: 957px) {
+  .contbox-animacion2 {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .boxanimacion3 {
@@ -404,6 +427,12 @@ header h1 {
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   animation-fill-mode: forwards;
+}
+@media (max-width: 957px) {
+  .boxanimacion3 {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .line {
