@@ -7,6 +7,9 @@ h2 {
   width: fit-content;
   border-radius: 25px;
   box-shadow: 1px 1px 5px 0 black;
+  @include w1041 () {
+    text-align: center;
+  }
 }
 
 .h2--underlinedt {
@@ -21,24 +24,46 @@ h2 {
     margin-top: 60px;
   }
 }
+.titt {
+  margin-bottom: 50px;
+}
+
+.titti {
+  @include w525 () {
+    margin-bottom: 30px;
+  }
+}
 
 h1 {
   @include w525 () {
     font-size: 1.5rem;
+  }
+  @include w1041 () {
+    text-align: center;
   }
 }
 
 article {
   font-size: 1rem;
   margin: 3em 8em 3em 8em;
+  @include w1041 () {
+    margin: 1em;
+    padding: 1em;
+  }
   @include w525 () {
-    margin: 2em 5em 2em 5em;
+    margin: 0;
+  }
+  @include w1041 () {
+    text-align: center;
   }
 }
 
 h3 {
   margin-bottom: 20px;
   font-size: 1.45rem;
+  @include w1041 () {
+    text-align: center;
+  }
 }
 
 .h3--grande {
@@ -46,6 +71,9 @@ h3 {
   text-decoration: underline;
   font-size: 1.60rem;
   margin-bottom: 0;
+  @include w1041 () {
+    text-align: center;
+  }
   &--espaciado {
     @extend h3, .h3--grande;
     margin-bottom: 40px;
@@ -64,7 +92,11 @@ p {
   font-size: 1.2rem;
   margin-bottom: 20px;
   @include w525 () {
-    width: 300px;
+    width: 100%;
+    padding: 0 2.5px;
+  }
+  @include w1041 () {
+    text-align: center;
   }
 }
 
@@ -72,6 +104,9 @@ p {
   font-size: 3rem;
   font-weight: bold;
   text-shadow: 20px 30px 10px red, 10px 10px 5px blue;
+  @include w1041 () {
+    text-align: center;
+  }
 }
 
 .grilla-scale {

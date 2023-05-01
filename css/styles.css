@@ -195,7 +195,7 @@ header h1 {
     width: 700px;
   }
 }
-@media (max-width: 639px) {
+@media (max-width: 747px) {
   .img--linear {
     width: 400px;
   }
@@ -246,7 +246,7 @@ header h1 {
     width: 550px;
   }
 }
-@media (max-width: 525px) {
+@media (max-width: 579px) {
   .img--narrow {
     width: 300px;
   }
@@ -450,6 +450,11 @@ h2, .h2--underlinedt {
   border-radius: 25px;
   box-shadow: 1px 1px 5px 0 black;
 }
+@media (max-width: 1041px) {
+  h2, .h2--underlinedt {
+    text-align: center;
+  }
+}
 
 .h2--underlinedt {
   text-decoration: none;
@@ -463,9 +468,24 @@ h2, .h2--underlinedt {
   }
 }
 
+.titt {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 525px) {
+  .titti {
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 525px) {
   h1 {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 1041px) {
+  h1 {
+    text-align: center;
   }
 }
 
@@ -473,9 +493,20 @@ article {
   font-size: 1rem;
   margin: 3em 8em 3em 8em;
 }
+@media (max-width: 1041px) {
+  article {
+    margin: 1em;
+    padding: 1em;
+  }
+}
 @media (max-width: 525px) {
   article {
-    margin: 2em 5em 2em 5em;
+    margin: 0;
+  }
+}
+@media (max-width: 1041px) {
+  article {
+    text-align: center;
   }
 }
 
@@ -483,11 +514,21 @@ h3, .h3--grande--espaciado--arribatmb, .h3--grande--espaciado, .h3--grande--espa
   margin-bottom: 20px;
   font-size: 1.45rem;
 }
+@media (max-width: 1041px) {
+  h3, .h3--grande--espaciado--arribatmb, .h3--grande--espaciado, .h3--grande--espaciado--sinsubr, .h3--grande {
+    text-align: center;
+  }
+}
 
 .h3--grande, .h3--grande--espaciado--arribatmb, .h3--grande--espaciado--sinsubr, .h3--grande--espaciado {
   text-decoration: underline;
   font-size: 1.6rem;
   margin-bottom: 0;
+}
+@media (max-width: 1041px) {
+  .h3--grande, .h3--grande--espaciado--arribatmb, .h3--grande--espaciado--sinsubr, .h3--grande--espaciado {
+    text-align: center;
+  }
 }
 .h3--grande--espaciado, .h3--grande--espaciado--arribatmb, .h3--grande--espaciado--sinsubr {
   margin-bottom: 40px;
@@ -505,7 +546,13 @@ p {
 }
 @media (max-width: 525px) {
   p {
-    width: 300px;
+    width: 100%;
+    padding: 0 2.5px;
+  }
+}
+@media (max-width: 1041px) {
+  p {
+    text-align: center;
   }
 }
 
@@ -513,6 +560,11 @@ p {
   font-size: 3rem;
   font-weight: bold;
   text-shadow: 20px 30px 10px red, 10px 10px 5px blue;
+}
+@media (max-width: 1041px) {
+  .span__text {
+    text-align: center;
+  }
 }
 
 .grilla-scale {
